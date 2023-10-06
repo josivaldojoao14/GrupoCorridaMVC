@@ -1,0 +1,46 @@
+﻿@using CorridaWebApp.Data.Enum;
+@using CorridaWebApp.ViewModels;
+@model EditClubViewModel
+
+
+<form method="post" asp-action="Edit" enctype="multipart/form-data">
+  <input type="hidden" value="AddressId" id="AddressId" />
+  <div class="form-group my-2">
+    <label asp-for="Title">Title</label>
+    <input asp-for="Title" type="text" class="form-control" placeholder="Enter the club title">
+    <span asp-validation-for="Title" class="text-danger"></span>
+  </div>
+  <div class="form-group my-2">
+    <label asp-for="Description">Description</label>
+    <input asp-for="Description" type="text" class="form-control" placeholder="Enter the club description">
+    <span asp-validation-for="Description" class="text-danger"></span>
+  </div>
+  <div class="form-group my-2">
+    <label asp-for="ClubCategory">Category</label>
+    <select asp-for="ClubCategory" asp-items="@Html.GetEnumSelectList<ClubCategory>()" class="form-control form-control">
+      <option>--Select--</option>
+    </select>
+    <span asp-validation-for="ClubCategory" class="text-danger"></span>
+  </div>
+  <div class="form-group my-2">
+    <label asp-for="Address.StreetName">Street name</label>
+    <input asp-for="Address.StreetName" class="form-control" placeholder="Enter the club's street name">
+    <span asp-validation-for="Address.StreetName" class="text-danger"></span>
+  </div>
+  <div class="form-group my-2">
+    <label asp-for="Address.City">City</label>
+    <input asp-for="Address.City" class="form-control" placeholder="Enter the club's street name">
+    <span asp-validation-for="Address.City" class="text-danger"></span>
+  </div>
+  <div class="form-group my-2">
+    <label asp-for="Address.State">State</label>
+    <input asp-for="Address.State" class="form-control" placeholder="Enter the club's street name">
+    <span asp-validation-for="Address.State" class="text-danger"></span>
+  </div>
+  <div class="form-group my-2">
+    <label asp-for="Image">Image</label>
+    <input asp-for="Image" type="file" class="form-control" placeholder="Enter the club image">
+    <span asp-validation-for="Image" class="text-danger"></span>
+  </div>
+  <button type="submit" class="btn btn-primary my-3">Submit</button>
+</form>

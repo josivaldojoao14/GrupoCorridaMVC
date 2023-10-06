@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33627.172
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CorridaWebApp", "CorridaWebApp\CorridaWebApp.csproj", "{470E2170-9903-4AB6-87F5-3F18DC94CEAB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CorridaWebApp.Tests", "CorridaWebApp.Tests\CorridaWebApp.Tests.csproj", "{1A9B1E97-CBD3-4EFA-9430-2E6881F3573E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{470E2170-9903-4AB6-87F5-3F18DC94CEAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{470E2170-9903-4AB6-87F5-3F18DC94CEAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{470E2170-9903-4AB6-87F5-3F18DC94CEAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{470E2170-9903-4AB6-87F5-3F18DC94CEAB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A9B1E97-CBD3-4EFA-9430-2E6881F3573E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A9B1E97-CBD3-4EFA-9430-2E6881F3573E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A9B1E97-CBD3-4EFA-9430-2E6881F3573E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A9B1E97-CBD3-4EFA-9430-2E6881F3573E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {27FE715A-67B0-4E6F-972C-D186FDDA62D9}
+	EndGlobalSection
+EndGlobal
